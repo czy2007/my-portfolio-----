@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人簡歷 - Single Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#home">My Portfolio</a>
+      <ul class="nav-menu">
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#experience">經歷</a></li>
+        <li><a href="#portfolio">作品集</a></li>
+        <li><a href="#contact">聯絡</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>你好，我是 張三</h1>
+        <p>前端工程師 / UI 設計愛好者</p>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>關於我</h2>
+      <p>我有多年前端開發經驗，熟悉 HTML、CSS、JavaScript，喜歡以使用者為中心設計介面與互動。</p>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h2>技能</h2>
+      <p class="lead">以下以標籤雲版本展示技能，桌面三欄、手機單欄。</p>
+      <div class="skills-grid">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Vue</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Accessibility</span>
+      </div>
+    </section>
+
+    <section id="experience" class="experience container">
+      <h2>經歷</h2>
+      <ul>
+        <li class="experience-item"><strong>某科技公司</strong> — 前端工程師（2021 - 現在）</li>
+        <li class="experience-item"><strong>某設計公司</strong> — UI 設計師（2019 - 2021）</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <h2>作品集</h2>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">作品 A</article>
+        <article class="portfolio-item">作品 B</article>
+        <article class="portfolio-item">作品 C</article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>聯絡</h2>
+      <form class="contact-form">
+        <label>姓名<input id="name" type="text" required></label>
+        <label>電子郵件<input id="email" type="email" required></label>
+        <label>訊息<textarea id="message" rows="5" required></textarea></label>
+        <button type="submit">送出</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 張三</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
